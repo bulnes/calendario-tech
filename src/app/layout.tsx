@@ -1,20 +1,21 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Calendário Tech",
-  description: "Calendário Tech é o site com a lista de eventos Tech BR mais atualizada da internet",
+  title: 'Calendário Tech',
+  description:
+    'Calendário Tech é o site com a lista de eventos Tech BR mais atualizada da internet',
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): JSX.Element {
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning={true}>
